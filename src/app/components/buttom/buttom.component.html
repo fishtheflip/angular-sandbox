@@ -1,8 +1,10 @@
 <button
   type="button"
   [disabled]="canClick"
-  (click)="sayMessage()">
-  Change color to red
+  (click)="sayMessage()"
+  [ngStyle]="{'color':'brown'}"
+  class="btn">
+  {{text}}
 </button>
 <p
   [id]="sayHelloId"
